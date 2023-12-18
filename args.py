@@ -1,9 +1,3 @@
-"""
-@Project   : MVGPCA_v3
-@Time      : 2021/10/4
-@Author    : Zhihao Wu
-@File      : args.py
-"""
 import argparse
 
 
@@ -11,7 +5,7 @@ def parameter_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("--device", type=str, default="0", help="Device, cuda:num or cpu")
     parser.add_argument("--path", type=str, default="./datasets/", help="Dataset path")
-    parser.add_argument("--dataset", type=str, default="UAI", help="Dataset name")
+    parser.add_argument("--dataset", type=str, default="Cora", help="Dataset name")
     parser.add_argument("--seed", type=int, default=42, help="Random seed, default 42 (Vanilla GCN)")
     parser.add_argument("--fix_seed", action='store_true', default=True, help="fix the seed or not")
     parser.add_argument("--n_repeated", type=int, default=5, help="Repeated times")
